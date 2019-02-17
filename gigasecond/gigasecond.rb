@@ -1,4 +1,4 @@
-module Gigasecond
+class Gigasecond
   SECONDS = 1_000_000_000
 
   def self.from(time)
