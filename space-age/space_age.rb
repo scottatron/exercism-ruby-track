@@ -8,7 +8,7 @@ class SpaceAge
   end
 
   def method_missing(method_name)
-    planet = method_name.to_s.gsub(/on_/, "")
+    planet = method_name.to_s.sub(/on_/, "")
     super unless EARTH_DELTAS.keys.include?(planet)
     on_earth / EARTH_DELTAS.fetch(planet)
   end
