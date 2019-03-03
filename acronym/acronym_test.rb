@@ -1,4 +1,5 @@
 require 'minitest/autorun'
+require 'minitest/pride'
 require_relative 'acronym'
 
 # Common test data version: 1.5.0 787d24e
